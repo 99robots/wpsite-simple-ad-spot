@@ -10,8 +10,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 The WPsite Simple Ad Spot plugin is the easiest way to place an advertisement in your WordPress site.
 
-This plugin allows you to either insert an image advertisement that links to an url or insert ad code from ad providers such as AdSense or OpenX. 
-
 == Description ==
 
 This plugin allows you to either insert an image advertisement that links to the url of your choice or insert ad code fro your ad provider such as AdSense or OpenX. 
