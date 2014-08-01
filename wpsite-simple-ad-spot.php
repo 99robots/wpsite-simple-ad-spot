@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: WPSite Simple Ad Spot Beta
-plugin URI:
-Description:
+Plugin Name: WPSite Simple Ad Spot
+plugin URI: http://wpsite.net
+Description: The WPsite Simple Ad Spot plugin is the easiest way to place an advertisement in your WordPress site.
 version: 1.0
-Author:
-Author URI:
+Author: WPSITE.NET
+Author URI: http://wpsite.net
 License: GPL2
 */
 

@@ -1,7 +1,7 @@
 === WPsite Simple Ad Spot ===
 Contributors: wpsitenet, kjbenk, charliepatel
 Donate link: 
-Tags: ad widget, advertisement, adsense, openx, google ads, google adsense, image ad, image advertisement, ad plugin, advertisement widget, openx, google ads, google adsense, 
+Tags: ad widget, advertisement, adsense, openx, google ads, google adsense, image ad, image advertisement, ad plugin, advertisement widget, openx, google ads, google adsense
 Requires at least: 3.8
 Tested up to: 3.9.1
 Stable tag: 1.0
@@ -23,7 +23,7 @@ Simple Ad Spot is an extremely lightweight plugin that allows you to do the foll
 
 This is great plugin for sites that use ad scripts or places image ads. Most importantly, it helps site owners avoid having to write their own HTML or code simply to place an advertisement on their site. 
 
-For more details, visit the [http://www.wpsite.net WordPress Site Plugins] page for more information.
+For more details, visit the [WordPress Site Plugins](http://www.wpsite.net) page for more information.
 
 == Installation ==
 
