@@ -51,5 +51,8 @@ Similar to all other plugins, follow these instructions:
 
 == Changelog ==
 
+= 1.0.1 =
+* Minor updates
+
 = 1.0 =
 * Initial release
