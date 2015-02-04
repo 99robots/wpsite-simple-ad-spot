@@ -1,10 +1,10 @@
 === WPsite Simple Ad Spot ===
-Contributors: wpsitenet, kjbenk, charliepatel
+Contributors: 99robots, wpsitenet, kjbenk, charliepatel
 Donate link:
 Tags: ad widget, advertisement, adsense, openx, google ads, google adsense, image ad, image advertisement, ad plugin, advertisement widget, openx, google ads, google adsense
 Requires at least: 3.8
-Tested up to: 4.0
-Stable tag: 1.0.3
+Tested up to: 4.1
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,6 +50,12 @@ Similar to all other plugins, follow these instructions:
 1. Simple Ad Spot Widget
 
 == Changelog ==
+
+= 1.0.5 =
+* Minor Updates
+
+= 1.0.4 =
+* Compatible with WordPress 4.1
 
 = 1.0.3 =
 * Supports WordPress 4.0
