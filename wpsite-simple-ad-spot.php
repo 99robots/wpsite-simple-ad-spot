@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: WPSite Simple Ad Spot
-plugin URI: http://wpsite.net
-Description: The WPsite Simple Ad Spot plugin is the easiest way to place an advertisement in your WordPress site.
-version: 1.0.5
-Author: WPSITE.NET
-Author URI: http://wpsite.net
+Plugin Name: 99 Robots Simple Ad Spot
+plugin URI: http://www.99robots.com
+Description: The 99 Robots Simple Ad Spot plugin is the easiest way to place an advertisement in your WordPress site.
+version: 1.0.6
+Author: 99 Robots
+Author URI: http://www.99robots.com
 License: GPL2
 */
 
@@ -31,7 +31,7 @@ if (!defined('WPSITE_SIMPLE_AD_SPOT_PLUGIN_URL'))
 /* Plugin verison */
 
 if (!defined('WPSITE_SIMPLE_AD_SPOT_VERSION_NUM'))
-    define('WPSITE_SIMPLE_AD_SPOT_VERSION_NUM', '1.0.5');
+    define('WPSITE_SIMPLE_AD_SPOT_VERSION_NUM', '1.0.6');
 
 
 /**
@@ -90,7 +90,7 @@ class WPsiteSimpleAdSpot extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'wpsite-simple-ad-spot', // Base ID
-			__('WPsite Simple Ad Spot', self::$text_domain), // Name
+			__('99 Robots Simple Ad Spot', self::$text_domain), // Name
 			array( 'description' => __( 'Display an Ad', self::$text_domain), ) // Args
 		);
 	}

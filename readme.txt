@@ -1,14 +1,14 @@
-=== WPsite Simple Ad Spot ===
-Contributors: 99robots, wpsitenet, kjbenk, charliepatel
+=== 99 Robots Simple Ad Spot ===
+Contributors: 99robots, wpsitenet
 Donate link:
 Tags: ad widget, advertisement, adsense, openx, google ads, google adsense, image ad, image advertisement, ad plugin, advertisement widget, openx, google ads, google adsense
 Requires at least: 3.8
-Tested up to: 4.1
-Stable tag: 1.0.5
+Tested up to: 4.2
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-The WPsite Simple Ad Spot plugin is the easiest way to place an advertisement in your WordPress site.
+The 99 Robots Simple Ad Spot plugin is the easiest way to place an advertisement in your WordPress site.
 
 == Description ==
 
@@ -23,7 +23,7 @@ Simple Ad Spot is an extremely lightweight plugin that allows you to do the foll
 
 This is great plugin for sites that use ad scripts or places image ads. Most importantly, it helps site owners avoid having to write their own HTML or code simply to place an advertisement on their site.
 
-For more details, visit the [WordPress Site Plugins](http://www.wpsite.net) page for more information.
+For more details, visit [99 Robots](http://www.99robots.com) page for more information.
 
 == Installation ==
 
@@ -50,6 +50,9 @@ Similar to all other plugins, follow these instructions:
 1. Simple Ad Spot Widget
 
 == Changelog ==
+
+= 1.0.6 =
+* Re-branded to 99 Robots
 
 = 1.0.5 =
 * Minor Updates
