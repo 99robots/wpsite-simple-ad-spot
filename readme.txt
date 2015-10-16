@@ -1,20 +1,21 @@
-=== 99 Robots Simple Ad Spot ===
-Contributors: 99robots, wpsitenet
+=== Simple Ad Spot by 99 Robots ===
+Contributors: 99robots, kjbenk, charliepatel
 Donate link:
 Tags: ad widget, advertisement, adsense, openx, google ads, google adsense, image ad, image advertisement, ad plugin, advertisement widget, openx, google ads, google adsense
-Requires at least: 3.8
-Tested up to: 4.2
-Stable tag: 1.0.6
+Requires at least: 4.0
+Tested up to: 4.3.1
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-The 99 Robots Simple Ad Spot plugin is the easiest way to place an advertisement in your WordPress site.
+Simple Ad Spot by 99 Robots is the easiest way to place an advertisement in your WordPress site.
 
 == Description ==
 
-This plugin allows you to either insert an image advertisement that links to the url of your choice or insert ad code fro your ad provider such as AdSense or OpenX.
+This plugin allows you to either insert an image advertisement that links to the URL of your choice or insert Ad code from your Ad provider such as AdSense or OpenX.
 
 = Features =
+
 Simple Ad Spot is an extremely lightweight plugin that allows you to do the following:
 
 * Place an image ad with a destination url
@@ -23,7 +24,7 @@ Simple Ad Spot is an extremely lightweight plugin that allows you to do the foll
 
 This is great plugin for sites that use ad scripts or places image ads. Most importantly, it helps site owners avoid having to write their own HTML or code simply to place an advertisement on their site.
 
-For more details, visit [99 Robots](http://www.99robots.com) page for more information.
+Also please check out our other [plugins](https://99robots.com/products/?utm_source=wprepo&utm_medium=simple-ad-spot&utm_campaign=desc) :)
 
 == Installation ==
 
@@ -50,6 +51,9 @@ Similar to all other plugins, follow these instructions:
 1. Simple Ad Spot Widget
 
 == Changelog ==
+
+= 1.1.0 =
+* UPDATED: Readme file and authors
 
 = 1.0.6 =
 * Re-branded to 99 Robots
