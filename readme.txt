@@ -4,7 +4,7 @@ Donate link:
 Tags: ad widget, advertisement, adsense, openx, google ads, google adsense, image ad, image advertisement, ad plugin, advertisement widget, openx, google ads, google adsense
 Requires at least: 4.0
 Tested up to: 4.3.1
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -52,7 +52,10 @@ Similar to all other plugins, follow these instructions:
 
 == Changelog ==
 
-= 1.1.0 =
+= 1.1.1 = 2015-10-16
+* ADDED: Icon
+
+= 1.1.0 = 2015-10-16
 * UPDATED: Readme file and authors
 
 = 1.0.6 =
