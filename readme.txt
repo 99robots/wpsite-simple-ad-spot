@@ -1,5 +1,5 @@
 === Simple Ad Spot by 99 Robots ===
-Contributors: 99robots, kjbenk, charliepatel
+Contributors: 99robots, charliepatel
 Donate link:
 Tags: ad widget, advertisement, adsense, openx, google ads, google adsense, image ad, image advertisement, ad plugin, advertisement widget, openx, google ads, google adsense
 Requires at least: 4.0
