@@ -3,7 +3,7 @@
  * Plugin Name: Simple Ad Spot
  * Plugin URI: https://www.99robots.com
  * Description: The 99 Robots Simple Ad Spot plugin is the easiest way to place an advertisement in your WordPress site.
- * Version: 1.1.2
+ * Version: 1.1.3
  * Author: 99 Robots
  * Author URI: https://www.99robots.com
  * License: GPL2
