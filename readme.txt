@@ -52,8 +52,8 @@ Similar to all other plugins, follow these instructions:
 
 == Changelog ==
 
-= 1.1.3 = 2019-09-09
-* Compatible with WordPress 5.2
+= 1.1.3 = 2019-09-10
+* Compatible with WordPress 5.2.3
 
 = 1.1.2 = 2017-06-11
 * Compatible with WordPress 4.8
