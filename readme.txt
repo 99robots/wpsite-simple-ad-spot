@@ -1,10 +1,10 @@
 === Simple Ad Spot by 99 Robots ===
-Contributors: 99robots, charliepatel
+Contributors: 99robots, charliepatel, draftpress
 Donate link:
 Tags: ad widget, advertisement, adsense, openx, google ads, google adsense, image ad, image advertisement, ad plugin, advertisement widget, openx, google ads, google adsense
-Requires at least: 4.0
-Tested up to: 5.2.3
-Stable tag: 1.1.3
+Requires at least: 4.5
+Tested up to: 5.5.1
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,7 +24,7 @@ Simple Ad Spot is an extremely lightweight plugin that allows you to do the foll
 
 This is great plugin for sites that use ad scripts or places image ads. Most importantly, it helps site owners avoid having to write their own HTML or code simply to place an advertisement on their site.
 
-Also please check out our other [plugins](https://99robots.com/products/?utm_source=wprepo&utm_medium=simple-ad-spot&utm_campaign=desc) :)
+Also please check out our other [plugins](https://draftpress.com/products/?utm_source=wprepo&utm_medium=simple-ad-spot&utm_campaign=desc) :)
 
 == Installation ==
 
@@ -51,6 +51,9 @@ Similar to all other plugins, follow these instructions:
 1. Simple Ad Spot Widget
 
 == Changelog ==
+
+= 1.1.4 = 2020-09-14
+* Compatible with WordPress 5.5.1
 
 = 1.1.3 = 2019-09-10
 * Compatible with WordPress 5.2.3
