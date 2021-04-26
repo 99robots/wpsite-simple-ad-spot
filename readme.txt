@@ -3,8 +3,8 @@ Contributors: 99robots, charliepatel, draftpress
 Donate link:
 Tags: ad widget, advertisement, adsense, openx, google ads, google adsense, image ad, image advertisement, ad plugin, advertisement widget, openx, google ads, google adsense
 Requires at least: 4.5
-Tested up to: 5.5.1
-Stable tag: 1.1.4
+Tested up to: 5.7.1
+Stable tag: 1.1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,6 +51,10 @@ Similar to all other plugins, follow these instructions:
 1. Simple Ad Spot Widget
 
 == Changelog ==
+
+= 1.1.5 = 2021-04-27
+* Compatible with WordPress 5.7.1
+* FIX - Ad Sense Code textarea overflow in small screen.
 
 = 1.1.4 = 2020-09-14
 * Compatible with WordPress 5.5.1
