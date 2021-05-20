@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Simple Ad Spot
- * Plugin URI: https://www.99robots.com
- * Description: The 99 Robots Simple Ad Spot plugin is the easiest way to place an advertisement in your WordPress site.
+ * Plugin URI: https://draftpress.com/simple-ad-spot
+ * Description: The DraftPress Simple Ad Spot plugin is the easiest way to place an advertisement in your WordPress site.
  * Version: 1.1.5
- * Author: 99 Robots
- * Author URI: https://www.99robots.com
+ * Author: DraftPress
+ * Author URI: https://draftpress.com/
  * License: GPL2
  */
 
