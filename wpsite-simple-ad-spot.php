@@ -1,9 +1,9 @@
 <?php
 /**
  * Plugin Name: Simple Ad Spot
- * Plugin URI: https://draftpress.com/simple-ad-spot
+ * Plugin URI: https://draftpress.com/products/simple-ad-spot
  * Description: The DraftPress Simple Ad Spot plugin is the easiest way to place an advertisement in your WordPress site.
- * Version: 1.1.5
+ * Version: 1.1.6
  * Author: DraftPress
  * Author URI: https://draftpress.com/
  * License: GPL2
