@@ -1,9 +1,10 @@
 <?php
+
 /**
  * Plugin Name: Simple Ad Spot
  * Plugin URI: https://draftpress.com/products
  * Description: The DraftPress Simple Ad Spot plugin is the easiest way to place an advertisement in your WordPress site.
- * Version: 1.1.6
+ * Version: 1.1.7
  * Author: DraftPress
  * Author URI: https://draftpress.com/
  * License: GPL2
@@ -84,35 +85,35 @@ class WPsite_Simple_Ad_Spot extends WP_Widget
         $ad_sense = isset($instance['ad_sense']) ? $instance['ad_sense'] : '';
         $image = isset($instance['image']) ? $instance['image'] : '';
         $link = isset($instance['link']) ? $instance['link'] : '';
-        ?>
-		<p>
-			<label for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title:', 'wpsite_simple_ad_spot')?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>">
-		</p>
+?>
+        <p>
+            <label for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title:', 'wpsite_simple_ad_spot') ?></label>
+            <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>">
+        </p>
 
-		<p>
-			<label for="<?php echo $this->get_field_id('ad_sense'); ?>"><?php esc_html_e('Ad Sense Code:', 'wpsite_simple_ad_spot')?></label>
-			<textarea style="box-sizing: border-box; width: 100%;" cols="46" rows="10" id="<?php echo $this->get_field_id('ad_sense'); ?>" name="<?php echo $this->get_field_name('ad_sense'); ?>"><?php echo esc_attr($ad_sense); ?></textarea>
-			<em><?php esc_html_e('Leave this blank if you want to use the Image and Link instead.', 'wpsite_simple_ad_spot')?></em>
-		</p>
+        <p>
+            <label for="<?php echo $this->get_field_id('ad_sense'); ?>"><?php esc_html_e('Ad Sense Code:', 'wpsite_simple_ad_spot') ?></label>
+            <textarea style="box-sizing: border-box; width: 100%;" cols="46" rows="10" id="<?php echo $this->get_field_id('ad_sense'); ?>" name="<?php echo $this->get_field_name('ad_sense'); ?>"><?php echo esc_attr($ad_sense); ?></textarea>
+            <em><?php esc_html_e('Leave this blank if you want to use the Image and Link instead.', 'wpsite_simple_ad_spot') ?></em>
+        </p>
 
-		<p>
-			<label for="<?php echo $this->get_field_id('image'); ?>"><?php esc_html_e('Image URL:', 'wpsite_simple_ad_spot')?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('image'); ?>" name="<?php echo $this->get_field_name('image'); ?>" type="text" value="<?php echo esc_url($image); ?>" placeholder="http://example.com/image.png"><br/>
-			<em><?php esc_html_e('URL to the image you want to display', 'wpsite_simple_ad_spot')?></em>
-		</p>
+        <p>
+            <label for="<?php echo $this->get_field_id('image'); ?>"><?php esc_html_e('Image URL:', 'wpsite_simple_ad_spot') ?></label>
+            <input class="widefat" id="<?php echo $this->get_field_id('image'); ?>" name="<?php echo $this->get_field_name('image'); ?>" type="text" value="<?php echo esc_url($image); ?>" placeholder="http://example.com/image.png"><br />
+            <em><?php esc_html_e('URL to the image you want to display', 'wpsite_simple_ad_spot') ?></em>
+        </p>
 
-		<p>
-			<label for="<?php echo $this->get_field_id('link'); ?>"><?php esc_html_e('Destination URL:', 'wpsite_simple_ad_spot')?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('link'); ?>" name="<?php echo $this->get_field_name('link'); ?>" type="text" value="<?php echo esc_url($link); ?>" placeholder="http://example.com"><br/>
-			<em><?php esc_html_e('Where you want the image to link', 'wpsite_simple_ad_spot')?></em>
-		</p>
+        <p>
+            <label for="<?php echo $this->get_field_id('link'); ?>"><?php esc_html_e('Destination URL:', 'wpsite_simple_ad_spot') ?></label>
+            <input class="widefat" id="<?php echo $this->get_field_id('link'); ?>" name="<?php echo $this->get_field_name('link'); ?>" type="text" value="<?php echo esc_url($link); ?>" placeholder="http://example.com"><br />
+            <em><?php esc_html_e('Where you want the image to link', 'wpsite_simple_ad_spot') ?></em>
+        </p>
 
-		<p>
-			<span><?php esc_html_e('This widget\'s css id is:', 'wpsite_simple_ad_spot')?></span> <strong><?php echo $this->id; ?></strong>
-		</p>
-		<?php
-}
+        <p>
+            <span><?php esc_html_e('This widget\'s css id is:', 'wpsite_simple_ad_spot') ?></span> <strong><?php echo $this->id; ?></strong>
+        </p>
+<?php
+    }
 
     /**
      * Sanitize widget form values as they are saved.
