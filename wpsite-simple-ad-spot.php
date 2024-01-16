@@ -3,10 +3,12 @@
  * Plugin Name: Simple Ad Spot
  * Plugin URI: https://draftpress.com/products
  * Description: The DraftPress Simple Ad Spot plugin is the easiest way to place an advertisement in your WordPress site.
- * Version: 1.1.7
+ * Version: 1.1.8
  * Author: DraftPress
  * Author URI: https://draftpress.com/
  * License: GPL2
+ *
+ * @package wpsite-simple-ad-spot
  */
 
 /**
@@ -19,9 +21,9 @@ add_action(
 	}
 );
 
-$plugin = plugin_basename( __FILE__ );
+$current_plugin = plugin_basename( __FILE__ );
 add_action( 'init', array( 'WPsite_Simple_Ad_Spot', 'load_textdomain' ) );
-add_filter( "plugin_action_links_$plugin", array( 'WPsite_Simple_Ad_Spot', 'plugin_links' ) );
+add_filter( "plugin_action_links_$current_plugin", array( 'WPsite_Simple_Ad_Spot', 'plugin_links' ) );
 
 /**
  *  WPsite_Simple_Ad_Spot main class
@@ -56,19 +58,19 @@ class WPsite_Simple_Ad_Spot extends WP_Widget {
 
 		$title = apply_filters( 'widget_title', $instance['title'] );
 
-		echo $args['before_widget'];
+		echo wp_kses_post( $args['before_widget'] );
 
 		if ( ! empty( $title ) ) {
-			echo $args['before_title'] . $title . $args['after_title'];
+			echo wp_kses_post( $args['before_title'] ) . wp_kses_post( $title ) . wp_kses_post( $args['after_title'] );
 		}
 
 		if ( isset( $instance['ad_sense'] ) && '' !== $instance['ad_sense'] ) {
-			echo $instance['ad_sense'];
+			echo esc_html( $instance['ad_sense'] );
 		} elseif ( isset( $instance['image'] ) && isset( $instance['link'] ) && '' !== $instance['image'] && '' !== $instance['link'] ) {
-			echo '<div class="wps-sas-container" style="max-width:100%;overflow:hidden;"><a class="wps-sas-link" href="' . $instance['link'] . '" target="_blank"><img class="wps-sas-image" src="' . $instance['image'] . '"/></a></div>';
+			echo '<div class="wps-sas-container" style="max-width:100%;overflow:hidden;"><a class="wps-sas-link" href="' . esc_url( $instance['link'] ) . '" target="_blank"><img class="wps-sas-image" src="' . esc_url( $instance['image'] ) . '"/></a></div>';
 		}
 
-		echo $args['after_widget'];
+		echo wp_kses_post( $args['after_widget'] );
 	}
 
 	/**
@@ -86,30 +88,30 @@ class WPsite_Simple_Ad_Spot extends WP_Widget {
 		$link     = isset( $instance['link'] ) ? $instance['link'] : '';
 		?>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'wpsite_simple_ad_spot' ); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
+			<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title:', 'wpsite_simple_ad_spot' ); ?></label>
+			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'ad_sense' ); ?>"><?php esc_html_e( 'Ad Sense Code:', 'wpsite_simple_ad_spot' ); ?></label>
-			<textarea style="box-sizing: border-box; width: 100%;" cols="46" rows="10" id="<?php echo $this->get_field_id( 'ad_sense' ); ?>" name="<?php echo $this->get_field_name( 'ad_sense' ); ?>"><?php echo esc_attr( $ad_sense ); ?></textarea>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'ad_sense' ) ); ?>"><?php esc_html_e( 'Ad Sense Code:', 'wpsite_simple_ad_spot' ); ?></label>
+			<textarea style="box-sizing: border-box; width: 100%;" cols="46" rows="10" id="<?php echo esc_attr( $this->get_field_id( 'ad_sense' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'ad_sense' ) ); ?>"><?php echo esc_textarea( $ad_sense ); ?></textarea>
 			<em><?php esc_html_e( 'Leave this blank if you want to use the Image and Link instead.', 'wpsite_simple_ad_spot' ); ?></em>
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'image' ); ?>"><?php esc_html_e( 'Image URL:', 'wpsite_simple_ad_spot' ); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id( 'image' ); ?>" name="<?php echo $this->get_field_name( 'image' ); ?>" type="text" value="<?php echo esc_url( $image ); ?>" placeholder="http://example.com/image.png"><br />
+			<label for="<?php echo esc_attr( $this->get_field_id( 'image' ) ); ?>"><?php esc_html_e( 'Image URL:', 'wpsite_simple_ad_spot' ); ?></label>
+			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'image' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'image' ) ); ?>" type="text" value="<?php echo esc_url( $image ); ?>" placeholder="http://example.com/image.png"><br />
 			<em><?php esc_html_e( 'URL to the image you want to display', 'wpsite_simple_ad_spot' ); ?></em>
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'link' ); ?>"><?php esc_html_e( 'Destination URL:', 'wpsite_simple_ad_spot' ); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id( 'link' ); ?>" name="<?php echo $this->get_field_name( 'link' ); ?>" type="text" value="<?php echo esc_url( $link ); ?>" placeholder="http://example.com"><br />
+			<label for="<?php echo esc_attr( $this->get_field_id( 'link' ) ); ?>"><?php esc_html_e( 'Destination URL:', 'wpsite_simple_ad_spot' ); ?></label>
+			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'link' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'link' ) ); ?>" type="text" value="<?php echo esc_url( $link ); ?>" placeholder="http://example.com"><br />
 			<em><?php esc_html_e( 'Where you want the image to link', 'wpsite_simple_ad_spot' ); ?></em>
 		</p>
 
 		<p>
-			<span><?php esc_html_e( 'This widget\'s css id is:', 'wpsite_simple_ad_spot' ); ?></span> <strong><?php echo $this->id; ?></strong>
+			<span><?php esc_html_e( 'This widget\'s css id is:', 'wpsite_simple_ad_spot' ); ?></span> <strong><?php echo esc_html( $this->id ); ?></strong>
 		</p>
 		<?php
 	}
@@ -158,6 +160,7 @@ class WPsite_Simple_Ad_Spot extends WP_Widget {
 	/**
 	 * Hooks to 'plugin_action_links_' filter
 	 *
+	 * @param array $links  Plugin action links.
 	 * @since 1.0.0
 	 */
 	public static function plugin_links( $links ) {
